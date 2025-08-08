@@ -1,48 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Free Fire Tournament</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freefire Tournament</title>
+<style>
+    /* Background animation */
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #000000, #1a0000);
-      color: white;
-      text-align: center;
-      padding: 20px;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(270deg, #b3d9ff, #80cfff, #b3d9ff);
+        background-size: 600% 600%;
+        animation: gradientBG 10s ease infinite;
+        text-align: center;
+        color: white;
     }
+    @keyframes gradientBG {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+
+    /* Title */
     h1 {
-      font-size: 36px;
-      color: white;
+        font-size: 2.5em;
+        margin-top: 50px;
     }
+
+    /* Description */
     p {
-      font-size: 18px;
-      margin-bottom: 40px;
+        font-size: 1.2em;
+        margin-bottom: 50px;
     }
+
+    /* Buttons */
     .btn {
-      display: block;
-      width: 80%;
-      max-width: 300px;
-      margin: 10px auto;
-      padding: 15px;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
+        display: block;
+        width: 250px;
+        margin: 15px auto;
+        padding: 12px;
+        font-size: 1.2em;
+        background-color: white;
+        color: #005c99;
+        border: 2px solid #005c99;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
     }
-    .btn-red { background-color: #e60000; color: white; }
-    .btn-blue { background-color: #0044cc; color: white; }
-    .btn-green { background-color: #009933; color: white; }
-    .btn-orange { background-color: #ff6600; color: white; }
-    .btn:hover { opacity: 0.8; }
-  </style>
+
+    /* Hover effect */
+    .btn:hover {
+        background-color: #e6f2ff;
+        transform: scale(1.05);
+    }
+</style>
 </head>
 <body>
-  <h1>FREEFIRE TOURNAMENT</h1>
-  <p>Win with skill, not with hacks. Play and win redeem codes.</p>
-  <a href="https://forms.gle/bXfwH5SoBGkcTxt26" target="_blank" style="text-decoration: none;">
-  <button style="background-color: red; color: white; border: none; padding: 10px 20px; border-radius: 10px; font-size: 16px;">TOURNAMENT</button>
-  </a>
+
+    <h1>FREEFIRE TOURNAMENT</h1>
+    <p>Win with skill not with hack, play and win redeem code</p>
+
+    <a href="tournament.html" class="btn">TOURNAMENT</a>
+    <a href="rules.html" class="btn">Rules & Regulations</a>
+    <a href="https://www.amazon.in/dp/B00KQ2O6BM" target="_blank" class="btn">Amazon Gift Card Code</a>
+
+</body>
+</html>
